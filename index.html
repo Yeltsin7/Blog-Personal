@@ -1,33 +1,30 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog Personal — Yeltsin D. Ancachi</title>
-  <meta name="description" content="Blog Personal de Yeltsin D. Ancachi, estudiante de Ingeniería en Sistemas, con proyectos y habilidades en desarrollo web." />
-  <!-- Open Graph para redes sociales -->
-  <meta property="og:title" content="Blog Personal — Yeltsin D. Ancachi" />
-  <meta property="og:description" content="Blog personal de Yeltsin D. Ancachi, estudiante de Ingeniería en Sistemas." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="MioYel.png" />
+  <meta name="description" content="Blog Personal de Yeltsin D. Ancachi, estudiante de Ingeniería en Sistemas, con proyectos y habilidades en desarrollo web.">
 
-  <link rel="stylesheet" href="estilos.css" />
-  <!-- Font Awesome para íconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Panel lateral con perfil -->
-  <aside class="sidebar">
-    <img src="MioYel.png" alt="Imagen mia" class="avatar" />
-    <h1>Yeltsin David Ancachi Ch.</h1>
-    <p class="rol">Estudiante de Ingeniería en Sistemas</p>
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
 
-    <!-- Redes sociales -->
-    <div class="social-links">
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <img src="MioYel.png" alt="Imagen de Yeltsin D. Ancachi" class="avatar">
+      <h1>Yeltsin David Ancachi Ch.</h1>
+      <p class="rol">Estudiante de Ingeniería en Sistemas</p>
+    </div>
+
+    <nav class="social-links" aria-label="Redes sociales">
       <a href="https://github.com/Yeltsin7" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
       <a href="https://wa.me/59175709180" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    </div>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
 
     <nav class="barra-nav" aria-label="Navegación principal">
       <ul>
@@ -35,12 +32,11 @@
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#formacion">Formación</a></li>
-
       </ul>
     </nav>
   </aside>
 
-  <main class="contenido">
+  <main id="contenido">
     <section id="sobre-mi">
       <h2>Sobre mí</h2>
       <p>Soy estudiante de Ingeniería en Sistemas con formación como Técnico Superior en Sistemas Informáticos. Tengo interés en el desarrollo de software y en encontrar soluciones eficientes a problemas tecnológicos. Me gusta trabajar en equipo y seguir aprendiendo en todo lo relacionado con la tecnología y la programación. Busco oportunidades donde pueda aplicar mis conocimientos y seguir creciendo en el área de sistemas.</p>
@@ -50,81 +46,52 @@
       <h2>Proyectos destacados</h2>
       <article class="proyecto" tabindex="0">
         <h3>Sistema de control de inventarios</h3>
-        <p>Desarrollé una aplicación de escritorio para la gestión integral de inventarios, donde implementé funcionalidades clave como el registro de productos, control de stock y generación de reportes automáticos. Utilicé PHP para la lógica de negocio y MySQL como sistema de base de datos, lo que permitió optimizar los procesos administrativos, reducir errores y mejorar la precisión en el manejo de inventarios.</p>
+        <p>Desarrollé una aplicación de escritorio para la gestión integral de inventarios, donde implementé funcionalidades clave como el registro de productos, control de stock y generación de reportes automáticos. Utilicé PHP para la lógica de negocio y MySQL como sistema de base de datos.</p>
       </article>
+
       <article class="proyecto" tabindex="0">
         <h3>Página web promocional para negocio</h3>
-        <p>Diseño y desarrollo de una página web promocional para un emprendimiento local, con un diseño adaptativo, utilizando únicamente HTML y CSS</p>
+        <p>Diseño y desarrollo de una página web promocional para un emprendimiento local, con un diseño adaptativo, utilizando únicamente HTML y CSS.</p>
       </article>
     </section>
 
-   <section id="habilidades">
-  <h2>Habilidades</h2>
-  <div class="habilidadess">
-    <div class="hab1">
-      <div class="recuadro">
-        <p>HTML/CSS</p>
-      </div>
-    </div>
-    <div class="hab1">
-      <div class="recuadro">
-        <p>PHP</p>
-      </div>
-    </div>
-    <div class="hab1">
-      <div class="recuadro">
-        <p>PYTHON</p>
-      </div>
-    </div>
-    <div class="hab1">
-      <div class="recuadro">
-        <p>MySQL</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul class="habilidades-list">
+        <li><strong>HTML/CSS</strong></li>
+        <li><strong>PHP</strong></li>
+        <li><strong>Python</strong></li>
+        <li><strong>MySQL</strong></li>
+      </ul>
+    </section>
 
     <section id="formacion">
       <h2>Formación académica</h2>
+      <article class="formacion-academica">
+        <h3>Técnico en Sistemas Informáticos</h3>
+        <p>Instituto Técnico Catec (2024)</p>
+        <img src="catec.png" alt="Logo de institución Catec">
+      </article>
 
-      <div class="formacion-academica">
-        <strong>Técnico en Sistemas Informáticos</strong><br />
-        Instituto Técnico Catec (2024)
-        <img src="catec.png" alt="Logo de institución" />
-      </div>
-
-
-      <div class="formacion-academica">
-        <strong>Ingeniería en Sistemas</strong><br />
-        Universidad Adventista de Bolivia (Inicio: 2025)
-        <img src="adventista.png" alt="UAB" class="Imagen" />
-    </div>
+      <article class="formacion-academica">
+        <h3>Ingeniería en Sistemas</h3>
+        <p>Universidad Adventista de Bolivia (Inicio: 2025)</p>
+        <img src="adventista.png" alt="Logo Universidad Adventista" class="Imagen">
+      </article>
     </section>
 
-    <!--
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <form>
-        <p>WhatsApp: <a href="https://wa.me/59175709180" target="_blank" rel="noopener noreferrer">+591 XXXXXXX</a></p>
-        
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required aria-required="true" />
-        <label for="email">Correo</label>
-        <input type="email" id="email" name="email" required aria-required="true" />
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required aria-required="true"></textarea>
-        <button type="submit">Enviar mensaje</button>
-        <p>WhatsApp: <a href="https://wa.me/59175709180" target="_blank" rel="noopener noreferrer">+591 XXXXXXX</a></p>
-      </form>
-    </section>-->
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Yeltsin David Ancachi</p>
+    <footer>
+      <p>© <span id="year"></span> Ing. Yeltsin David Ancachi</p>
     </footer>
   </main>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".barra-nav");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
   </script>
 </body>
 </html>
